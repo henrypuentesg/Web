@@ -2,6 +2,50 @@ body {
     font-family: 'Titillium Web', sans-serif;
 }
 
+h1 {
+    font-size: 66px;
+    font-weight: 600;
+    line-height: 80px;
+}
+
+p {
+    font-size: 18px;
+    color: #999999;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+.topmargin-xs {
+    margin-top: 15px;
+}
+
+.topmargin-sm {
+    margin-top: 30px;
+}
+
+.topmargin-lg {
+    margin-top: 60px;
+}
+
+.btn {
+    font-size: 14px;
+    padding: 15px 26px;
+    min-width: 160px;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+.btn-light {
+    background-color: #ffffff;
+    color: #1a1a1a;
+    border: 2px solid #ffffff;
+}
+
+.btn ion-icon {
+    font-size: 16px;
+    margin-left: 5px;
+}
+
 .navbar {
     background-color: #ffffff;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .05);
@@ -31,4 +75,71 @@ Ponel el texto seleccionado negro
 
 .navbar-toggler:focus {
     outline: none;
+}
+
+#hero {
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    padding-top: 90px;
+    min-height: 700px;
+    color: rgb(204, 212, 233);
+}
+
+#hero p {
+    color: #ffffff;
+}
+
+.conten-center {
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+}
+
+
+/*
+ Media queries bootstrap
+ Extra small devices (portrait phones, less than 576px)
+*/
+
+@media (max-width: 575.98px) {
+    h1 {
+        font-size: 40px;
+        line-height: normal;
+    }
+}
+
+
+/* 
+Small devices (landscape phones, 576px and up) 
+*/
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    ...
+}
+
+
+/*
+ Medium devices (tablets, 768px and up)
+ */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    ...
+}
+
+
+/*
+  Large devices (desktops, 992px and up)
+*/
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    ...
+}
+
+
+/* 
+ Extra large devices (large desktops, 1200px and up)
+*/
+
+@media (min-width: 1200px) {
+    ...
 }
