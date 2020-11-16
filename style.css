@@ -8,11 +8,24 @@ h1 {
     line-height: 80px;
 }
 
+h2 {
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
 p {
     font-size: 18px;
     color: #999999;
     line-height: 1.8;
     margin-bottom: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+section {
+    padding: 120px 0;
 }
 
 .topmargin-xs {
@@ -80,19 +93,58 @@ Ponel el texto seleccionado negro
 #hero {
     background-image: url('images/hero.jpg');
     background-size: cover;
-    padding-top: 90px;
+    padding-top: 160px;
     min-height: 700px;
     color: rgb(204, 212, 233);
 }
 
-#hero p {
-    color: #ffffff;
+#hero h1 {
+    color: #00010a;
 }
 
-.conten-center {
+#hero p {
+    color: #0b011d;
+}
+
+.content-center {
     max-width: 800px;
     margin: 0 auto 60px auto;
     text-align: center;
+}
+
+.portfolio-container {
+    position: relative;
+    overflow: hidden;
+    margin: 10px 0px;
+    border-radius: 2px;
+}
+
+.portfolio-container img {
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.portfolio-container:hover img {
+    -moz-tranform: scale (1.2);
+    -webkit-tranform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.portfolio-details {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    z-index: 9000;
+}
+
+.portfolio-details h2 {
+    margin-bottom: 0px;
+}
+
+.portfolio-details a h2,
+.portfolio-details a p {
+    color: #ffffff;
 }
 
 
