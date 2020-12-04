@@ -195,6 +195,49 @@
         </div>
     </section>
 
+
+    <section is="Users">
+        <div class="container">
+            <div class="row">
+                <div class="text-center topmargin-lg">
+                    <h3>Nuestros Usuarios!! </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis
+                        aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+                <div class="container my-5 text-center">
+                    <button class="btn btn-secondary" onclick="traer()">Actualizar</button>
+                    <div class="mt-5" id="Perfiles">
+
+                    </div>
+                </div>
+
+                <script>
+                    var Perfiles = document.querySelector('#Perfiles')
+
+                    function traer() {
+                        fetch('https://randomuser.me/api/')
+                            .then(res => res.json())
+                            .then(
+                                data => {
+                                    console.log(data.results['0'])
+                                    Perfiles.innerHTML = `
+                                    <img src="${data.results['0'].picture.large}" width="200px" class="img-fluid img-thumbnail">
+                                    <h3>Nombre: ${data.results['0'].name.first}  ${data.results['0'].name.last} </h3>
+                                    <h4>Ubicacion: ${data.results['0'].location.city}  -  ${data.results['0'].location.country} </h4>
+                                    <h4>Ubicacion: ${data.results['0'].location.city}  -  ${data.results['0'].location.country} </h4>
+                                    
+                                    `
+                                })
+
+                    }
+                </script>
+
+            </div>
+        </div>
+    </section>
+
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
