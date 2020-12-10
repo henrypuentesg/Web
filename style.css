@@ -13,6 +13,10 @@ h2 {
     margin-bottom: 30px;
 }
 
+h5 {
+    margin-bottom: 0px;
+}
+
 p {
     font-size: 18px;
     color: #999999;
@@ -24,8 +28,17 @@ a:hover {
     text-decoration: none;
 }
 
+a i {
+    font-size: 22px;
+    color: #ffffff;
+}
+
 section {
     padding: 120px 0;
+}
+
+.bg-light-grey {
+    background-color: #f5f5f5;
 }
 
 .topmargin-xs {
@@ -56,6 +69,11 @@ section {
 
 .btn ion-icon {
     font-size: 16px;
+    margin-left: 5px;
+}
+
+.btn i {
+    font-size: 14px;
     margin-left: 5px;
 }
 
@@ -169,6 +187,26 @@ Ponel el texto seleccionado negro
     color: #ffffff;
 }
 
+.member-container {
+    position: relative;
+    margin: 10px 0;
+}
+
+.members-details {
+    position: absolute;
+    color: #ffffff;
+    bottom: 0px;
+    left: 20px;
+}
+
+.members-details span {
+    font-size: 14px;
+}
+
+.members-details i {
+    padding: 0 5px;
+}
+
 
 /*
  Media queries bootstrap
@@ -187,33 +225,46 @@ Ponel el texto seleccionado negro
 Small devices (landscape phones, 576px and up) 
 */
 
+
+/*
 @media (min-width: 576px) and (max-width: 767.98px) {
     ...
 }
+*/
 
 
 /*
  Medium devices (tablets, 768px and up)
  */
 
+
+/*
 @media (min-width: 768px) and (max-width: 991.98px) {
     ...
 }
+*/
 
 
 /*
   Large devices (desktops, 992px and up)
 */
 
+
+/*
 @media (min-width: 992px) and (max-width: 1199.98px) {
     ...
 }
+*/
 
 
 /* 
  Extra large devices (large desktops, 1200px and up)
 */
 
+
+/*
 @media (min-width: 1200px) {
     ...
 }
+
+*/
