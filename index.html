@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <!-- Required meta tags -->
@@ -146,7 +146,7 @@
         </div>
     </section>
 
-    <section is="aboutus" class="bg-light-grey">
+    <section id="aboutus" class="bg-light-grey">
         <div class="container">
             <div class="content-center">
                 <h2>Una Excelente Compañia </h2>
@@ -263,9 +263,10 @@
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
-    <section is="contac">
+    <section id="contac">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 topmargin-sm">
@@ -326,30 +327,10 @@
                     </div>
                 </div>
 
-
-                <style>
-                    * {
-                        font-family: sans-serif;
-                    }
-                    
-                    h1 {
-                        margin: 150px 0 30px 0;
-                        text-align: center;
-                    }
-                    
-                    #lienzoMapa {
-                        width: 800px;
-                        height: 600px;
-                        margin: 0 auto;
-                        border: 5px solid;
-                    }
-                </style>
-
                 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 
                 <script>
                     var Perfiles = document.querySelector('#Perfiles')
-
 
                     function traer() {
                         fetch('https://randomuser.me/api/')
