@@ -207,6 +207,13 @@ Ponel el texto seleccionado negro
     padding: 0 5px;
 }
 
+#lienzoMapa {
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    border: 5px solid;
+}
+
 
 /*
  Media queries bootstrap
