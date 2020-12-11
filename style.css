@@ -166,8 +166,8 @@ Ponel el texto seleccionado negro
 }
 
 .portfolio-container:hover img {
-    -moz-tranforms: scale (1.2);
-    -webkit-tranform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
     transform: scale(1.2);
 }
 
