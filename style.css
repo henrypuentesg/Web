@@ -218,6 +218,9 @@ Ponel el texto seleccionado negro
         font-size: 40px;
         line-height: normal;
     }
+    .portfolio-details h2 {
+        font-size: 32px;
+    }
 }
 
 
